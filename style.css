@@ -45,8 +45,7 @@ body {
   mask:
     radial-gradient(circle at 50% 50%, white 2px, transparent 2.5px) 50% 50% /
       20px 20px,
-    url("https://assets.codepen.io/605876/noise-mask.png") 256px 50% / 256px
-      256px;
+    url("assets/noise-mask.webp") 256px 50% / 256px 256px;
   mask-composite: intersect;
   animation: flicker 20s infinite linear;
   z-index: -1;

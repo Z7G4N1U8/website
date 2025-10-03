@@ -45,3 +45,27 @@ body {
   max-width: 600px;
   margin: 0 auto;
 }
+
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--primary-color);
+  border-top: 1px solid var(--secondary-color);
+  color: var(--text-muted-color);
+}
+
+.footer li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.footer ul {
+  margin-top: 5px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 400;
+}

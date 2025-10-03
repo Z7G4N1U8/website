@@ -2,9 +2,9 @@
   --bg-color: #000;
   --primary-color: #0a0a0a;
   --secondary-color: #141414;
-  --accent-color: #e6e6ff;
-  --text-color: #e6e6ff;
-  --text-muted-color: #dcdcff;
+  --accent-color: white;
+  --text-color: white;
+  --text-muted-color: #dcdcdc;
 }
 
 * {

@@ -2,7 +2,7 @@
   --bg-color: #000;
   --primary-color: #0a0a0a;
   --secondary-color: #141414;
-  --accent-color: #fff;
+  --accent-color: #89b4fa;
   --text-color: #fff;
   --text-muted-color: #e6e6e6;
   --blue: #89b4fa;
@@ -20,4 +20,28 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#home .container h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#home .container h1 span {
+  color: var(--accent-color);
+}
+
+#home .container p {
+  font-size: 1.2rem;
+  color: var(--text-muted-color);
+  max-width: 600px;
+  margin: 0 auto;
 }

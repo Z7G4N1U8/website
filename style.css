@@ -22,6 +22,36 @@ body {
   color: var(--text-color);
 }
 
+@keyframes flicker {
+  to {
+    mask-position:
+      50% 50%,
+      0 50%;
+  }
+}
+
+.el {
+  position: relative;
+}
+
+.el::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  mask:
+    radial-gradient(circle at 50% 50%, white 2px, transparent 2.5px) 50% 50% /
+      20px 20px,
+    url("https://assets.codepen.io/605876/noise-mask.png") 256px 50% / 256px
+      256px;
+  mask-composite: intersect;
+  animation: flicker 20s infinite linear;
+  z-index: -1;
+}
+
 #home {
   height: 100vh;
   display: flex;

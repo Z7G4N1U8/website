@@ -90,6 +90,7 @@ body {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
   background-color: var(--primary-color);
@@ -100,6 +101,7 @@ body {
   font-size: 1rem;
   transition: all 0.3s ease;
   border: 1px solid transparent;
+  width: 150px;
 }
 
 .btn:hover {
@@ -112,4 +114,14 @@ body {
 
 .btn i {
   font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .social-buttons {
+    width: 90%;
+  }
+  .btn {
+    flex-grow: 1;
+    width: auto;
+  }
 }
